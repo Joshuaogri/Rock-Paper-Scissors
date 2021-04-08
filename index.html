@@ -4,15 +4,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <title>Rock-paper-scissors</title>
-        <script src="script/script.js"></script>
-        <style>
-
-        </style>
+        <link rel="stylesheet" href="styles\style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         
     </head>
     
     <body>
-        
-       
-</body>
+        <div class="flex-container">
+            <div class="header">
+                <div class="review">
+                    <h1 id="fix">A game of Choices</h1>
+                    <p id="firstpara">Make a choice</p>
+                </div>
+            </div>
+            
+            <div class="gamesection" id="even">
+                <div class="playersection">
+                    <h3>Player Board</h3>
+                    <button id="rock"><img src="images\2-26981_free-download-of-stones-and-rocks-icon-rock.png" height="50px" width="70px"></button>
+                    <button id="paper"><img src="images\photo-1586075010923-2dd4570fb338.jfif" height="50px"width="70px"></button>
+                    <button id="scissors"><img src="images\download.png" height="50px"width="70px"></button>
+                </div>
+
+                <div class="initialscore">
+                    <h3>Scoreboard</h3>
+                    <div class="fixedscore">Player: <span id="box">0</span></div>
+                    <div class="scorebox">Device: <span id="boxy">0</span></div>
+                </div>
+
+                <div class="computersection">
+                    <h3>Device board</h3>
+                    <img id="compute" src="images\download (1).png">
+                </div>
+            </div>
+            <p id="comment"></p>
+
+            <div id="backup">
+                <a href="" id="load">Try again</a>
+            </div>
+
+
+            <div class="choices">
+                <p id="call"></p>
+            </div>
+
+            
+
+               
+
+        </div>
+        <script src="script/script.js"></script>
+    </body>
 </html>
